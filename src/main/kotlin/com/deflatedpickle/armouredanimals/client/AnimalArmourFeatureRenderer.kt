@@ -11,7 +11,6 @@ import net.minecraft.client.render.entity.EntityRendererFactory
 import net.minecraft.client.render.entity.LivingEntityRenderer
 import net.minecraft.client.render.entity.feature.ArmorFeatureRenderer
 import net.minecraft.client.render.entity.feature.FeatureRenderer
-import net.minecraft.client.render.entity.model.AnimalModel
 import net.minecraft.client.render.entity.model.EntityModel
 import net.minecraft.client.render.item.ItemRenderer
 import net.minecraft.client.util.math.MatrixStack
@@ -110,7 +109,7 @@ class AnimalArmourFeatureRenderer<T : LivingEntity, M : EntityModel<T>>(
             false,
             usesSecondLayer
         )
-        (model as AnimalModel<*>).render(
+        (model as EntityModel<*>).render(
             matrices,
             vertexConsumer,
             light,
