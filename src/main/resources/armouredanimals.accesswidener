@@ -1,0 +1,3 @@
+accessWidener	v1	named
+
+accessible    field    net/minecraft/client/render/entity/feature/ArmorFeatureRenderer    ARMOR_TEXTURE_CACHE    Ljava/util/Map;
