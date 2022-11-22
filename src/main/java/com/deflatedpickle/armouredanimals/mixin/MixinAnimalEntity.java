@@ -59,7 +59,7 @@ public abstract class MixinAnimalEntity extends MobEntity {
   }
 
   @Override
-  protected void damageArmor(DamageSource source, float amount) {
+  public void damageArmor(DamageSource source, float amount) {
     if (amount <= 0.0f) {
       return;
     }
